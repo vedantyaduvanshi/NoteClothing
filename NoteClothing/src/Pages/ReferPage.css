@@ -1,0 +1,70 @@
+#ReferPage{
+    height: 90vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+#RefrelHeadSection{
+    background-color: #01ae8b;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#referheading{
+    color: white;
+    margin-right: 10px;
+    font-size: 22px;
+    font-family: system-ui, -apple-system;
+}
+
+#BoxrEFERbOSS{
+    height: 250px;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    padding-top:35px;
+}
+
+.BoxRefrr{
+ display: flex;
+ justify-content: center;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 100%;
+  border: 2px solid black;
+  box-shadow: 7px 8px 0px -3px black;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#bOXTEXTrEFER{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+#bOXTEXTrEFER div{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 23px;
+    font-family: monospacep;
+    position: absolute;
+}

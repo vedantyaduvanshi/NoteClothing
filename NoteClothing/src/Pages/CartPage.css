@@ -1,0 +1,761 @@
+#CartPage{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+
+#YourCartSection{
+   min-height: 90vh;
+   height: auto;
+   width: 58%;
+   background-color: rgb(224, 224, 224);
+   display: flex;
+   flex-direction: column;
+   padding-top: 90px;
+   padding-left: 105px;
+   padding-bottom:100px;
+}
+
+#BackInCartPage{
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#YourCartSection h1{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#ProductBoxInCart{
+    height: 150px;
+    width: 600px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+
+#ProductBoxInCart img{
+    height: 140px;
+    width: auto;
+    cursor: pointer;
+}
+
+
+#ProductDetailsInCart{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 30px;
+    position: relative;
+}
+
+#NameInCart{
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+#ColorAndSizeInCart{
+    height: 25px;
+    width: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+    gap: 5px;
+    color: black;
+    font-weight: bolder;
+}
+
+#ColorInCart{
+    border: 1px solid black;
+    height: 14px;
+    width: 14px;
+    border-radius: 50px;
+}
+#SizeInCart{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 2px;
+    opacity: 0.7;
+}
+
+
+#QuantityInCart{
+    user-select: none;
+    height: 30px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#QuantityInCart div{
+  font-weight: bolder;
+  font-size: 14px;
+  font-family:Calibri;
+  /* border: 1px solid red; */
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plusminusInCart{
+    cursor: pointer;
+}
+#PriceIncART{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#DeleteInCart{
+    position: absolute;
+    bottom: 40px;
+    left: 120px;
+    height: 28px;
+    width: 28px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#EmptyCart{
+    height: 100%;
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#EmptyCart h2{
+    font-family: system-ui, -apple-system;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#CheckOutSection{
+    min-height: 90vh;
+    height: auto;
+    width: 42%;
+    background-color: #01ae8b;
+    display: flex;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-left: 30px;
+}
+
+
+#FullPagCheckout{
+    min-height: 90vh;
+    height: auto;
+    width: 100%;
+    background-color: #01ae8b;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#FullPagecheckoutBox{
+    border: 2px solid white;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+ @-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+#BillCheckout{
+    min-height: 130px;
+    max-height: 300px;
+    height: auto;
+    min-width: 300px;
+    max-width: 400px;
+    width: auto;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.BillDiv{
+    height: 35px;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.BILLtITLE{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid blue; */
+}
+
+.BillValue{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid blue; */
+}
+
+#BoldinBill{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#lightinBill{
+    font-size: 20px;
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+#hrAroundTotalBill{
+    height: 1px;
+    width: 350px;
+    background-color: transparent;
+    border-style: double;
+    border-color: white;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+#ApplyDiscountsInCheckouts{
+    margin-top: 20px;
+    height: 30px;
+    width: 350px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 160px;
+    color: white;
+    font-family: system-ui, -apple-system;
+}
+
+
+
+#GetFreeDeliverySection{
+    height: 70px;
+    width: 360px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3px;
+
+}
+
+#GetFreeDeliverySection h3{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#DeliveryFreeProgress{
+    height: 10px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
+    opacity: 0.9;
+}
+
+#DeliveryFreeProgress div{
+    position: absolute;
+    height: 5px;
+    width: 250px;
+    background-color: #ffb81e;
+    border-radius: 8px;
+}
+
+#CheckoutbuttonInCart{
+    height: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#CheckoutbuttonInCart button{
+    height: 50px;
+    width: 350px;
+    background-color: #ffb81e;
+    border: 2px solid black;
+    border-bottom: 5px solid black;
+    font-family: system-ui, -apple-system;
+    font-weight: bolder;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+
+#CheckoutbuttonInCart button:hover{
+    background-color: #fcb00b;
+    cursor: pointer;
+}
+
+#BillLoader{
+    height: 500px;
+    width: 100%;
+    /* border: 1px solid red; */
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#BillLoader h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    color: white;
+}
+
+
+#BillLoader p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+#LoadingInCart{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    /* background-color: rgba(91, 89, 89, 0.627); */
+}
+
+
+#TransactionSafely{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: white;
+    font-family: system-ui, -apple-system;
+    /* border: 1px solid white; */
+    font-size: 14px;
+    padding-left: 0;
+    width: 350px;
+}
+
+#TransactionSafely span{
+    margin-bottom: 2px;
+}
+
+
+#TransactionSafely1{
+    width: 350px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: white;
+    font-family: system-ui, -apple-system;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+
+#TransactionSafely span{
+    margin-bottom: 2px;
+}
+
+
+#InputForDiscountandSave{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+}
+
+#InputForDiscountandSave input{
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#InputForDiscountandSave button{
+    height: 100%;
+    width: 30%;
+    background-color: #232223;
+    color: white;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+    #ProductBoxInCart {
+        height: 150px;
+        width: 500px;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    #ProductBoxInCart {
+        height: 150px;
+        width: 450px;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 950px) {
+    #CartPage {
+        flex-direction: column;
+    }
+    
+    #YourCartSection {
+        min-height: 0 !important;
+        height: auto !important;
+        width: 100%;
+        border: 1px solid red;
+        background-color: rgb(224, 224, 224);
+        display: flex;
+        flex-direction: column;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        
+    }
+    #CheckOutSection {
+        min-height: 70vh;
+        width: 100%;
+        background-color: #01ae8b;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left:150px ;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 660px) {
+    
+    #YourCartSection {
+        min-height: 0 !important;
+        height: auto !important;
+        width: 100%;
+        border: 1px solid red;
+        background-color: rgb(224, 224, 224);
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        
+    }
+    #CheckOutSection {
+        min-height: 70vh;
+        width: 100%;
+        background-color: #01ae8b;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left:20px ;
+        padding-bottom: 20px;
+    }
+    .DeliveryInfoCart{
+        margin-top: 30px;
+    height: 120px;
+    width: 400px !important;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    font-family: system-ui, -apple-system;
+    font-size: 15px;
+    padding: 10px;
+    justify-content: center;
+    }
+
+    .DeliveryUpdatesCart p {
+        font-family: system-ui, -apple-system;
+        font-size: 16px;
+        text-align: start;
+        padding-right: 10px;
+    }
+
+    #PhoneNumberEnterOrdeer {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 400px !important;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+#ProductBoxInCart {
+    height: 150px;
+    width: 340px !important;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+#PriceIncART {
+    position: absolute;
+    top: 46px !important;
+    right: 50px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+}
+
+
+
+@media only screen and (max-width: 460px) {
+    
+    #YourCartSection {
+        min-height: 0 !important;
+        height: auto !important;
+        width: 100%;
+        border: 1px solid red;
+        background-color: rgb(224, 224, 224);
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 90px;
+        padding-bottom: 100px;
+        
+    }
+    #CheckOutSection {
+        min-height: 70vh;
+        width: 100%;
+        background-color: #01ae8b;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left:20px ;
+        padding-bottom: 20px;
+    }
+    .DeliveryInfoCart{
+        margin-top: 30px;
+    height: 120px;
+    width: 310px !important;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    font-family: system-ui, -apple-system;
+    font-size: 15px;
+    padding: 10px;
+    justify-content: center;
+    }
+
+    .DeliveryUpdatesCart p {
+        font-family: system-ui, -apple-system;
+        font-size: 16px;
+        text-align: start;
+        padding-right: 10px;
+    }
+
+    #PhoneNumberEnterOrdeer {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        width: 310px !important;
+        /* border: 1px solid black; */
+        margin-top: 20px;
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #GetFreeDeliverySection {
+        height: 70px;
+        width: 309px;
+        /* border: 1px solid rgb(255, 255, 255); */
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    #FullPagecheckoutBox {
+   width: 400px;
+   font-size: 16px !important;
+   margin-top: 10%;
+    }
+    #FullPagCheckout {
+    height: 100vh !important;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #FullPagecheckoutBox {
+   width: 350px;
+   font-size: 16px !important;
+   margin-top: 10%;
+    }
+    #FullPagCheckout {
+    height: 100vh !important;
+
+    }
+
+    #hrAroundTotalBill{
+     width: 100%;
+    }
+
+    #ApplyDiscountsInCheckouts {
+        width: 300px;
+        gap: 104px;
+        color: white;
+        font-family: system-ui, -apple-system;
+    }
+    #CheckoutbuttonInCart button {
+        width: 295px;
+    }
+    #TransactionSafely {
+       text-align: center;
+        width: 300px;
+    }
+
+    #BillLoader {
+        height: 500px;
+        width: 80% !important;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    #ThankYouPage {
+        height: 95.5vh;
+        width: 100%;
+        background-color: #01ae8b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center !important;
+        padding: 20px;
+    }
+
+    #ThankYouPage h1 {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        font-size: 40px !important;
+    }
+    
+    
+}

@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1200px) {
+    #footerfirst {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hide3 {
+        display: none !important;
+    }
+
+    #CompanyFooter{
+        margin-left: 50px;
+    }
+
+    #EmailList{
+      width: 50%;
+    }
+    #ContactFooter{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #EmailList {
+        display: none !important;
+    }
+
+    
+    #CompanyFooter{
+        margin-left: 0px;
+        width: auto;
+    }
+
+    #ContactFooter{
+        margin-left: 0px;
+        width: auto;
+    }
+
+    #footerfirst{
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    #footersecond h1{
+        font-size: 100px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #footerfirst{
+        gap: 10px;
+    }
+    #CompanyFooter{
+        margin-left: 20px;
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    #footerfirst{
+        gap: 0px;
+    }
+
+    #ContactFooter{
+padding-right: 12px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    #footersecond h1{
+        font-size: 60px;
+    }
+
+    #footersecond span{
+        font-size: 16px;
+    }
+
+}

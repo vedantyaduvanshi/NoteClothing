@@ -1,0 +1,36 @@
+#LogInSection{
+    height: 80vh;
+    width: auto;
+    max-width: 550px;
+   /* border-left: 5px solid black;
+   border-right: 5px solid black; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+
+
+
+#LogInSection h1{
+    font-family: system-ui;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-left: 15px;
+}
+
+
+  #NotAlreadyAccount{
+    font-family: Calibri;
+    font-size: 16px;
+    margin-left: 36%;
+    margin-top: 20px;
+  }
+
+  #NotAlreadyAccount span{
+    font-weight: bolder;
+    cursor: pointer;
+  }

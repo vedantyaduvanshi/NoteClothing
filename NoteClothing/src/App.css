@@ -1,0 +1,41 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+}
+
+
+/* Firefox */
+*{
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #ffffff;
+}
+
+/* Other browsers */
+*::-webkit-scrollbar{
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track{
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #000000;
+  border-radius: 0px;
+  border: 3px solid #ffffff;
+}

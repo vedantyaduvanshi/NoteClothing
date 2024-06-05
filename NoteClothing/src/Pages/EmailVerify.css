@@ -1,0 +1,78 @@
+#EmailVerify{
+    height: 100vh;
+    width: 100%;
+    background-color: #01ae8b;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: system-ui, -apple-system;
+    color: white;
+}
+
+#EmailVerify input::placeholder {
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+  }
+  
+#EmailVerify h2{
+    font-size: 35px;
+}
+
+#EmailVerify p{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+#EmailVerify span{
+text-align: center;
+}
+
+
+#EmailVerify input::-webkit-outer-spin-button,
+#EmailVerify input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#EmailVerify input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#EmailVerify input{
+    height: 35px;
+    width: 200px;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+#EmailVerify h4{
+    margin-top: 20px;
+    text-decoration: underline;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+#EmailVerify button{
+    margin-top: 20px;
+    height: 35px;
+    width: 180px;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: white;
+    outline: none;
+    font-size: 15px;
+    font-family: system-ui, -apple-system;
+    font-weight: bolder;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+
+@media only screen and (max-width: 1100px) {
+    #LeftOptionOfNavbar {
+        justify-content: flex-end !important;
+        padding-right: 50px;
+    }
+    #RightOptionOfNavbar {
+        justify-content: flex-start !important;
+        padding-left: 50px !important;
+    }
+
+    #hide1{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #hide2{
+        display: none;
+    }
+    #LeftOptionOfNavbar {
+        justify-content: flex-end !important;
+        padding-right: 100px;
+    }
+    #RightOptionOfNavbar {
+        justify-content: flex-start !important;
+        padding-left: 100px !important;
+    }
+    #FloatingCart{
+        display: flex !important;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    #hide2{
+        display: none;
+    }
+    #LeftOptionOfNavbar {
+        justify-content: flex-end !important;
+        padding-right: 80px;
+    }
+    #RightOptionOfNavbar {
+        justify-content: flex-start !important;
+        padding-left: 100px !important;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+    #hide2{
+        display: none;
+    }
+    #LeftOptionOfNavbar {
+        justify-content: flex-end !important;
+        padding-right: 70px;
+    }
+    #RightOptionOfNavbar {
+        justify-content: flex-start !important;
+        padding-left: 90px !important;
+    }
+
+}
+
+
+#FloatingCart{
+    display: none;
+    z-index: 100;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    background-color:black;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 3%;
+    right: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
